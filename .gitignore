@@ -11,3 +11,4 @@ wheels/
 
 # 데이터 
 data/
+.ipynb_checkpoints/
