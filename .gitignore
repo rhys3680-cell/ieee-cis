@@ -8,6 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+.ipynb_checkpoints/
 
 # 데이터 
 data/
