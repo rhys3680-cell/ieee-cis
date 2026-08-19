@@ -5,8 +5,6 @@ test_identity.csv  -> id-01 ... id-38 (하이픈)
 
 """
 
-from __future__ import annotations
-
 import re
 from collections.abc import Iterable
 
