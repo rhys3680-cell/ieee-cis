@@ -405,3 +405,54 @@ COLUMN_TYPES = {
     "V338": "DOUBLE",
     "V339": "DOUBLE",
 }
+
+
+#: identity CSV 의 컬럼별 DuckDB 타입 (정규화된 언더스코어 이름 기준).
+#:
+#: test_identity.csv는 하이픈을 사용하므로 identity_fix로 정규화한 뒤 적용.
+IDENTITY_COLUMN_TYPES = {
+    "TransactionID": "INTEGER",
+    "id_01": "SMALLINT",
+    "id_02": "INTEGER",
+    "id_03": "SMALLINT",
+    "id_04": "SMALLINT",
+    "id_05": "SMALLINT",
+    "id_06": "SMALLINT",
+    "id_07": "SMALLINT",
+    "id_08": "SMALLINT",
+    "id_09": "SMALLINT",
+    "id_10": "SMALLINT",
+    "id_11": "DOUBLE",
+    "id_12": "VARCHAR",
+    "id_13": "UTINYINT",
+    "id_14": "SMALLINT",
+    "id_15": "VARCHAR",
+    "id_16": "VARCHAR",
+    "id_17": "UTINYINT",
+    "id_18": "UTINYINT",
+    "id_19": "SMALLINT",
+    "id_20": "SMALLINT",
+    "id_21": "SMALLINT",
+    "id_22": "UTINYINT",
+    "id_23": "VARCHAR",
+    "id_24": "UTINYINT",
+    "id_25": "SMALLINT",
+    "id_26": "UTINYINT",
+    "id_27": "VARCHAR",
+    "id_28": "VARCHAR",
+    "id_29": "VARCHAR",
+    "id_30": "VARCHAR",
+    "id_31": "VARCHAR",
+    "id_32": "UTINYINT",
+    "id_33": "VARCHAR",
+    "id_34": "VARCHAR",
+    "id_35": "BOOLEAN",
+    "id_36": "BOOLEAN",
+    "id_37": "BOOLEAN",
+    "id_38": "BOOLEAN",
+    "DeviceType": "VARCHAR",
+    "DeviceInfo": "VARCHAR",
+}
+
+#: 각 split의 기대 행 수. ETL이 데이터를 잃지 않는지 확인
+EXPECTED_ROWS = {"train": 590_540, "test": 506_691}
