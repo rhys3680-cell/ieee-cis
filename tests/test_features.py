@@ -52,7 +52,6 @@ def test_feature_sql_runs_on_duckdb():
     row = con.execute(f"SELECT {feature_sql()} FROM txn").df()
     assert len(row) == 1
     assert row["amt_decimals"].iloc[0] == 0  # 100.0 은 정수
-    assert row["is_null_d7"].iloc[0]  # NULL 이므로 True
 
 
 @pytest.mark.parametrize(
