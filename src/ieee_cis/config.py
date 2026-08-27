@@ -8,3 +8,5 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = PROJECT_ROOT / "data" / "ieee-fraud-detection"
 WAREHOUSE_DIR = PROJECT_ROOT / "data" / "warehouse"
 WAREHOUSE_PATH = WAREHOUSE_DIR / "warehouse.duckdb"
+
+MODEL_DIR = PROJECT_ROOT / "data" / "models"
